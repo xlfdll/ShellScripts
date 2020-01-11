@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 sudo apt install -y lib64stdc++6 mesa-utils
 
