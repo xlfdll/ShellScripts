@@ -30,8 +30,7 @@ echo "Generating build $build ($builddate $buildtime)..."
 # echo "" >> Directory.Build.props
 # echo "<Project>" >> Directory.Build.props
 # echo "  <PropertyGroup>" >> Directory.Build.props
-# echo "    <VersionPrefix>$version</VersionPrefix>" >> Directory.Build.props
-# echo "    <VersionSuffix>$build</VersionSuffix>" >> Directory.Build.props
+# echo "    <Version>$version.$build</Version>" >> Directory.Build.props
 # echo "  </PropertyGroup>" >> Directory.Build.props
 # echo "</Project>" >> Directory.Build.props
 
