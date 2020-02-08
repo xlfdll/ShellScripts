@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#version=`cat version.txt`
+# version=`cat version.txt`
 build=$[`git log --oneline | wc -l`]
 builddate=`date +"%F" `
 buildtime=`date +"%T" `
@@ -30,6 +30,7 @@ echo "Generating build $build ($builddate $buildtime)..."
 # echo "" >> Directory.Build.props
 # echo "<Project>" >> Directory.Build.props
 # echo "  <PropertyGroup>" >> Directory.Build.props
+# echo "    <VersionPrefix>$version</VersionPrefix>" >> Directory.Build.props
 # echo "    <VersionSuffix>$build</VersionSuffix>" >> Directory.Build.props
 # echo "  </PropertyGroup>" >> Directory.Build.props
 # echo "</Project>" >> Directory.Build.props
