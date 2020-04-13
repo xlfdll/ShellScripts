@@ -1,2 +1,3 @@
+#!/bin/bash
+
 git clean -d -x --dry-run
-git clean -d -x -f
