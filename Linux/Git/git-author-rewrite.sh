@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Usage: git-author-rewrite.sh <Author Old Email> <Author New Name> <Author New Email>
 
