@@ -16,7 +16,7 @@ echo "Generating build $build ($builddate $buildtime)..."
 # echo "    {" >> BuildInfo.cs
 # echo "    internal static class BuildInfo" >> BuildInfo.cs
 # echo "        {" >> BuildInfo.cs
-# echo "        internal const string Version = \"$buildversion\";" >> BuildInfo.cs
+# echo "        internal const string Version = \"$version\";" >> BuildInfo.cs
 # echo "        internal const string Build = \"$build\";" >> BuildInfo.cs
 # echo "        internal const string BuildDate = \"$builddate\";" >> BuildInfo.cs
 # echo "        internal const string BuildTime = \"$buildtime\";" >> BuildInfo.cs
