@@ -12,17 +12,19 @@ echo "Generating build $build ($builddate $buildtime)..."
 # echo "// Auto-generated build information code file" > BuildInfo.cs
 # echo "// (C) Xlfdll Workstation" >> BuildInfo.cs
 # echo "" >> BuildInfo.cs
+# echo "using System;" >> BuildInfo.cs
+# echo "" >> BuildInfo.cs
 # echo "namespace Xlfdll" >> BuildInfo.cs
+# echo "{" >> BuildInfo.cs
+# echo "    public static class BuildInfo" >> BuildInfo.cs
 # echo "    {" >> BuildInfo.cs
-# echo "    internal static class BuildInfo" >> BuildInfo.cs
-# echo "        {" >> BuildInfo.cs
-# echo "        internal const string Version = \"$version\";" >> BuildInfo.cs
-# echo "        internal const string Build = \"$build\";" >> BuildInfo.cs
-# echo "        internal const string BuildDate = \"$builddate\";" >> BuildInfo.cs
-# echo "        internal const string BuildTime = \"$buildtime\";" >> BuildInfo.cs
-# echo "        internal const string CommitHash = \"$commithash\";" >> BuildInfo.cs
-# echo "        }" >> BuildInfo.cs
+# echo "        public const String Version = \"$buildversion\";" >> BuildInfo.cs
+# echo "        public const String Build = \"$build\";" >> BuildInfo.cs
+# echo "        public const String BuildDate = \"$builddate\";" >> BuildInfo.cs
+# echo "        public const String BuildTime = \"$buildtime\";" >> BuildInfo.cs
+# echo "        public const String CommitHash = \"$commithash\";" >> BuildInfo.cs
 # echo "    }" >> BuildInfo.cs
+# echo "}" >> BuildInfo.cs
 
 # For .NET Core projects
 # echo "<!-- Auto-generated build information code file -->" > Directory.Build.props
