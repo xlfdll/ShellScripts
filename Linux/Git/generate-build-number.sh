@@ -36,4 +36,51 @@ echo "Generating build $build ($builddate $buildtime)..."
 # echo "  </PropertyGroup>" >> Directory.Build.props
 # echo "</Project>" >> Directory.Build.props
 
+# For C projects
+# echo "// Auto-generated build information code file" > BuildInfo.c
+# echo "// (C) Xlfdll Workstation" >> BuildInfo.c
+# echo "" >> BuildInfo.c
+# echo "const char* Version = \"$buildversion\";" >> BuildInfo.c
+# echo "const char* Build = \"$build\";" >> BuildInfo.c
+# echo "const char* BuildDate = \"$builddate\";" >> BuildInfo.c
+# echo "const char* BuildTime = \"$buildtime\";" >> BuildInfo.c
+# echo "const char* CommitHash = \"$commithash\";" >> BuildInfo.c
+
+# For C++ projects
+# -- Declaration
+# echo "// Auto-generated build information code file" > BuildInfo.hpp
+# echo "// (C) Xlfdll Workstation" >> BuildInfo.hpp
+# echo "" >> BuildInfo.hpp
+# echo "#ifndef BUILDINFO_HPP" >> BuildInfo.hpp
+# echo "#define BUILDINFO_HPP" >> BuildInfo.hpp
+# echo "" >> BuildInfo.hpp
+# echo "namespace Xlfdll" >> BuildInfo.hpp
+# echo "{" >> BuildInfo.hpp
+# echo "    class BuildInfo" >> BuildInfo.hpp
+# echo "    {" >> BuildInfo.hpp 
+# echo "    public:" >> BuildInfo.hpp
+# echo "        static const char* Version;" >> BuildInfo.hpp
+# echo "        static const char* Build;" >> BuildInfo.hpp
+# echo "        static const char* BuildDate;" >> BuildInfo.hpp
+# echo "        static const char* BuildTime;" >> BuildInfo.hpp
+# echo "        static const char* CommitHash;" >> BuildInfo.hpp
+# echo "    };" >> BuildInfo.hpp
+# echo "}" >> BuildInfo.hpp
+# echo "" >> BuildInfo.hpp
+# echo "#endif" >> BuildInfo.hpp
+# -- Implementation
+# echo "// Auto-generated build information code file" > BuildInfo.cpp
+# echo "// (C) Xlfdll Workstation" >> BuildInfo.cpp
+# echo "" >> BuildInfo.cpp
+# echo "#include \"BuildInfo.hpp\"" >> BuildInfo.cpp
+# echo "" >> BuildInfo.cpp
+# echo "namespace Xlfdll" >> BuildInfo.cpp
+# echo "{" >> BuildInfo.cpp
+# echo "    const char* BuildInfo::Version = \"$buildversion\";" >> BuildInfo.cpp
+# echo "    const char* BuildInfo::Build = \"$build\";" >> BuildInfo.cpp
+# echo "    const char* BuildInfo::BuildDate = \"$builddate\";" >> BuildInfo.cpp
+# echo "    const char* BuildInfo::BuildTime = \"$buildtime\";" >> BuildInfo.cpp
+# echo "    const char* BuildInfo::CommitHash = \"$commithash\";" >> BuildInfo.cpp
+# echo "}" >> BuildInfo.cpp
+
 echo "Done."
