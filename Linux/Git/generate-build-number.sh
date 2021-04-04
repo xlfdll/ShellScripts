@@ -83,4 +83,19 @@ echo "Generating build $build ($builddate $buildtime)..."
 # echo "    const char* BuildInfo::CommitHash = \"$commithash\";" >> BuildInfo.cpp
 # echo "}" >> BuildInfo.cpp
 
+# For C/C++ header-only / Windows native projects
+# echo "// Auto-generated build information code file" > BuildInfo.h
+# echo "// (C) Xlfdll Workstation" >> BuildInfo.h
+# echo "" >> BuildInfo.h
+# echo "#ifndef BUILDINFO_H" >> BuildInfo.h
+# echo "#define BUILDINFO_H" >> BuildInfo.h
+# echo "" >> BuildInfo.h
+# echo "#define Version \"$buildversion\"" >> BuildInfo.h
+# echo "#define Build \"$build\"" >> BuildInfo.h
+# echo "#define BuildDate \"$builddate\"" >> BuildInfo.h
+# echo "#define BuildTime \"$buildtime\"" >> BuildInfo.h
+# echo "#define CommitHash \"$commithash\"" >> BuildInfo.h
+# echo "" >> BuildInfo.h
+# echo "#endif" >> BuildInfo.h
+
 echo "Done."
