@@ -99,4 +99,7 @@ echo "Generating build $build ($builddate $buildtime)..."
 # echo "" >> BuildInfo.h
 # echo "#endif" >> BuildInfo.h
 
+# For Node.js projects
+# npm --no-git-tag-version --allow-same-version version $version.$build > /dev/null
+
 echo "Done."
